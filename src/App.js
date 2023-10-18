@@ -1,12 +1,12 @@
 import './App.css';
-import AddClient from './Components/AddClient';
-import SearchClient from './Components/SearchClient';
-import ViewClient from './Components/ViewClient';
+
+import DeleteClient from './Components/DeleteClient';
+
 
 function App() {
   return (
     <div>
-    <SearchClient/>
+    <DeleteClient/>
     </div>
   );
 }
