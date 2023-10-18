@@ -24,6 +24,7 @@ const SearchClient = () => {
             (Response) => {
                 setOutputField(Response.data)
                 setIsLoading(false)
+                setInputField({clientID:""})
                 console.log(Response.data)
             }
         )
