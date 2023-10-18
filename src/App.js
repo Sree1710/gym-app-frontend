@@ -1,12 +1,22 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import AddClient from './Components/AddClient';
-import SearchClient from './Components/SearchClient';
 import ViewClient from './Components/ViewClient';
+import SearchClient from './Components/SearchClient';
+import DeleteClient from './Components/DeleteClient';
+
 
 function App() {
   return (
     <div>
-    <SearchClient/>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/addg" exact element={<AddClient/>} />
+      <Route path="/viewg" exact element={<ViewClient/>} />
+      <Route path="/searchg" exact element={<SearchClient/>}/>
+      <Route path="/deleteg" exact element={<DeleteClient/>} />
+    </Routes>
+    </BrowserRouter>
     </div>
   );
 }
